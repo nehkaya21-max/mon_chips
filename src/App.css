@@ -1,0 +1,1101 @@
+/* --- CONFIGURATION DE BASE --- */
+:root {
+  --vert: #006837;
+  --jaune: #fdb813;
+  --noir: #1a1a1a;
+  --bg: #fdfdfd;
+  --text: #333;
+  --gris-f: #f8f9fa;
+  --blanc: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* --- HEADER --- */
+.corporate-header {
+  background: var(--vert);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-img {
+  height: 60px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.corporate-nav button {
+  background: none;
+  border: none;
+  color: white;
+  margin: 0 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.9rem;
+}
+
+.corporate-nav button.active {
+  color: var(--jaune);
+  border-bottom: 2px solid var(--jaune);
+}
+
+.contact-btn {
+  background: var(--jaune);
+  color: var(--vert);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --- STRUCTURE --- */
+main {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* --- HERO ACCUEIL --- */
+.hero-v2 {
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/chips.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content-v2 h1 {
+  font-size: 3.5rem;
+  margin: 15px 0;
+  line-height: 1.1;
+}
+
+.text-yellow {
+  color: var(--jaune);
+}
+
+.hero-label {
+  text-transform: uppercase;
+  color: var(--jaune);
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.hero-btns-v2 {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.btn-solid {
+  background: var(--jaune);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+.btn-solid:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-ghost:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-ghost {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* --- POURQUOI NOUS --- */
+.why-us-premium {
+  padding: 60px 0;
+  background-color: var(--blanc);
+}
+
+.section-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.small-line-center {
+  width: 50px;
+  height: 4px;
+  background: var(--jaune);
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+.features-grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.feature-card-v2 {
+  background: var(--gris-f);
+  padding: 30px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.f-icon-wrap {
+  background: var(--vert);
+  color: var(--jaune);
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* --- GROUPE & USINE --- */
+.about-hero {
+  background: var(--gris-f);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+
+.mission-card-premium,
+.vision-card-premium {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid var(--jaune);
+}
+
+.icon-wrap {
+  background: var(--vert);
+  color: var(--jaune);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.factory-highlight {
+  background: var(--vert);
+  border-radius: 25px;
+  color: white;
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.factory-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: stretch;
+  min-height: 400px;
+}
+
+.factory-text {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.factory-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.factory-stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item strong {
+  font-size: 2rem;
+  color: var(--jaune);
+  display: block;
+}
+
+/* --- ÉQUIPE --- */
+.team-magazine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.member-card {
+  transition: 0.3s;
+}
+
+.member-photo-wrap {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #eee;
+  margin-bottom: 12px;
+}
+
+.member-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-role {
+  color: var(--vert);
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+/* --- BOUTIQUE --- */
+.filter-bar-v2 {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.search-box-v2 {
+  background: #f0f0f0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0.8;
+}
+
+.search-box-v2 input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+}
+
+.cats-v2 button {
+  padding: 8px 15px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  background: white;
+  transition: 0.3s;
+}
+
+.cats-v2 button.active {
+  background: var(--vert);
+  color: white;
+  border-color: var(--vert);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.p-card-v2 {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.p-img-box {
+  height: 220px;
+  background: #f9f9f9;
+}
+
+.p-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-details-v2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.p-price-v2 {
+  color: var(--vert);
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 8px 0;
+}
+
+.btn-order {
+  background: var(--vert);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* --- MODALE --- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+}
+
+.modal-content-v2 {
+  background: white;
+  width: 100%;
+  max-width: 850px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  animation: modalScale 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.m-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  min-height: 500px;
+}
+
+.m-img {
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.m-info {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.m-badge-cat {
+  background: var(--vert);
+  color: var(--jaune);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.m-price-tag {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--vert);
+  margin-bottom: 30px;
+}
+
+.m-price-tag::after {
+  content: " FCFA";
+  font-size: 1rem;
+  color: #999;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.close-x {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  color: var(--vert);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- FOOTER --- */
+.site-footer {
+  background: var(--noir);
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.footer-logo img {
+  height: 45px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.footer-links span {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* --- ANIMATIONS --- */
+.page-fade {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.feature-card-v2,
+.member-card,
+.p-card-v2 {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modalScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  animation: pulse 2s infinite;
+  text-decoration: none;
+}
+
+/* --- AJOUT ANIMATION POUR LES CARTES "POURQUOI NOUS" --- */
+
+.feature-card-v2 {
+  opacity: 0;
+  /* On les cache au départ */
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* On décale l'apparition de chaque carte pour un effet "un par un" */
+.features-grid-v2 .feature-card-v2:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.features-grid-v2 .feature-card-v2:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.features-grid-v2 .feature-card-v2:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .hero-content-v2 h1 {
+    font-size: 2.2rem;
+  }
+
+  .m-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .m-img {
+    height: 250px;
+  }
+
+  .factory-content {
+    grid-template-columns: 1fr;
+  }
+
+  .corporate-nav {
+    display: none;
+  }
+
+  .filter-bar-v2 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cats-v2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+.hero-slogan {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #ffcc00;
+  /* Une couleur dorée/jaune pour rappeler la banane */
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  /* Aligne l'icône et le bouton sur la même ligne horizontale */
+  gap: 20px;
+  /* Espace entre l'icône Facebook et le bouton de téléphone */
+}
+
+.facebook-link {
+  color: #1877F2;
+  /* Le bleu officiel de Facebook */
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+  background: rgb(247, 248, 249);
+  /* Un léger fond bleu transparent */
+}
+
+.facebook-link:hover {
+  transform: scale(1.1);
+  /* Petit effet de zoom au survol */
+  color: #054ada;
+  /* Bleu un peu plus foncé au survol */
+  background: rgba(237, 239, 241, 0.2);
+}
+
+/* On s'assure que sur mobile, ça ne casse pas tout */
+@media (max-width: 768px) {
+  .header-actions {
+    gap: 10px;
+  }
+
+  .contact-btn span {
+    display: none;
+    /* Cache le texte du numéro sur petit écran si besoin */
+  }
+}
+.official-sources {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(246, 214, 10, 0.94);
+}
+
+.source-title {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffcc00;
+  margin-bottom: 8px;
+}
+
+.source-item {
+  display: block;
+  font-size: 0.9rem;
+  color: #1bc9f9;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.source-item:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+/* --- SECTION ÉQUIPE (PROPOS) --- */
+
+.team-section {
+  text-align: center;
+  /* Centre le titre "Les Fondateurs" */
+  margin-top: 60px;
+}
+
+/* Grille pour les 2 fondateurs (centrée) */
+.team-magazine-grid {
+  display: flex;
+  justify-content: center;
+  /* Centre horizontalement les 2 cartes */
+  gap: 40px;
+  /* Espace entre les deux fondateurs */
+  margin-top: 40px;
+  flex-wrap: wrap;
+  /* S'adapte sur mobile */
+}
+
+/* Carte de membre individuelle */
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centre la photo et le texte à l'intérieur */
+  width: 200px;
+  /* Largeur de la carte (photo + texte) */
+}
+
+/* Le conteneur de la photo (pour le cercle) */
+.member-photo-wrap {
+  width: 130px;
+  /* RÉDUCTION DE LA TAILLE ICI (Ajuste selon tes goûts) */
+  height: 130px;
+  /* Même valeur que la largeur pour un cercle parfait */
+  border-radius: 50%;
+  /* Transforme en cercle */
+  overflow: hidden;
+  /* Cache tout ce qui dépasse du cercle */
+  border: 4px solid #ffcc00;
+  /* Un contour doré pour le style Mon Chips */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Petite ombre portée */
+  margin-bottom: 15px;
+  /* Espace sous la photo */
+  transition: transform 0.3s ease;
+  /* Effet au survol */
+}
+
+/* L'image elle-même à l'intérieur du cercle */
+.member-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* S'assure que le visage est bien centré et pas déformé */
+}
+
+/* Effet de zoom léger au survol de la photo */
+.member-photo-wrap:hover {
+  transform: scale(1.05);
+}
+
+/* Le texte (Nom et Rôle) */
+.member-info h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.member-role {
+  font-size: 0.9rem;
+  color: #ffcc00;
+  /* Rôle en doré */
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* --- Adaptabilité Mobile --- */
+@media (max-width: 600px) {
+  .team-magazine-grid {
+    gap: 20px;
+    /* Moins d'espace entre les deux sur mobile */
+  }
+
+  .member-photo-wrap {
+    width: 100px;
+    /* Encore plus réduit sur mobile */
+    height: 100px;
+  }
+}
+/* Fond de la section pour faire ressortir les cartes blanches */
+/* Animation d'apparition au chargement */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-card {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.founder-card-horizontal {
+  background: white;
+  display: flex;
+  padding: 30px;
+  border-radius: 8px;
+  /* Un peu plus arrondi pour la modernité */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Effet rebondi */
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+/* EFFET HOVER : La carte se soulève et l'ombre devient profonde */
+.founder-card-horizontal:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(45, 90, 39, 0.15);
+  /* Ombre teintée de vert */
+  border-color: rgba(45, 90, 39, 0.2);
+}
+
+.founder-circle-wrap {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #2d5a27;
+  transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+/* EFFET PHOTO : Zoom léger et changement de couleur de bordure au survol */
+.founder-card-horizontal:hover .founder-circle-wrap {
+  transform: scale(1.1) rotate(3deg);
+  /* Petit effet de rotation stylé */
+  border-color: #ffcc00;
+}
+
+.founder-right h4 {
+  margin: 5px 0;
+  font-size: 1.4rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Le nom passe en vert quand on survole la carte */
+.founder-card-horizontal:hover h4 {
+  color: #2d5a27;
+}
+
+.social-icon-item {
+  color: #2d5a27;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+
+.social-icon-item:hover {
+  color: #ffcc00;
+  transform: translateY(-3px);
+  /* L'icône monte au survol */
+}
+/* --- ANIMATIONS --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-card {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* --- SECTION ÉQUIPE --- */
+.founders-container-horizontal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.founder-card-horizontal {
+  background: white;
+  display: flex;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  align-items: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+}
+
+.founder-card-horizontal:hover {
+  
+  box-shadow: 0 20px 40px rgba(45, 90, 39, 0.15);
+  border-color: rgba(45, 90, 39, 0.2);
+}
+
+.founder-circle-wrap {
+  width: 150px;
+  height: 190px;
+  border-radius: 20%;
+  overflow: hidden;
+  border: 4px solid #a4e49c;
+  transition: all 0.5s ease;
+}
+
+.founder-circle-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-card-horizontal:hover .founder-circle-wrap {
+  
+  border-color: #ffcc00;
+}
+
+.founder-right {
+  flex: 1;
+  padding-left: 25px;
+  text-align: left;
+}
+
+.founder-right h4 {
+  margin: 5px 0;
+  font-size: 1.4rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.founder-card-horizontal:hover h4 {
+  color: #2d5a27;
+}
+
+.founder-socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icon-item {
+  color: #2d5a27;
+  transition: all 0.3s ease;
+}
+
+.social-icon-item:hover {
+  color: #ffcc00;
+  transform: translateY(-3px) scale(1.2);
+}
+
+/* --- LIENS OFFICIELS (BAD/USADF) --- */
+.official-sources {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px dashed rgba(45, 90, 39, 0.2);
+}
+
+.source-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.source-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.source-item {
+  font-size: 0.85rem;
+  color: #2d5a27;
+  text-decoration: none;
+  background: rgba(45, 90, 39, 0.05);
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border-left: 3px solid #2d5a27;
+  display: block;
+}
+
+.source-item:hover {
+  background: #2d5a27;
+  color: white;
+  transform: translateX(5px);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-links-header {
+  display: flex;
+  gap: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-right: 15px;
+}
+
+.social-icon-link {
+  color: #ffffff;
+  /* Couleur sobre par défaut */
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--jaune);
+  size: 1.2rem;
+}
+
+.social-icon-link:hover {
+  background: #0d6aec;
+  /* Vert du groupe au survol */
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optimisation pour mobile */
+@media (max-width: 768px) {
+  .social-links-header {
+    display: none;
+    /* Cache les icônes sur petit écran pour éviter l'encombrement */
+  }
+}

@@ -1,4 +1,4 @@
-{"homepage": "https://github.com/nehkaya21-max/mon_chips.git",
+{"homepage": "https://nehkaya21-max.github.io/mon_chips/",
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
      "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",

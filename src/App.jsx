@@ -19,6 +19,7 @@ import img500patate from './assets/500_patate_douce.jpeg';
 import img100patate from './assets/100_patate_douce_special.jpeg';
 import img500plantinOriginal from './assets/500_banane_plantin_original.jpeg';
 import img500sucre from './assets/500_banane_plantin_sucré.jpeg';
+import img100original from './assets/100original.jpg';
 
 import { PRODUITSSTATIQUES as PRODUITS_STATIQUES, INFOS_ENTREPRISE } from './data';
 
@@ -35,7 +36,7 @@ function App() {
     "100sucre": img100sucre, "100sucre2": img100sucre_bis, "100sucre1": img100sucre_bis,
     "100sucre(3)": img100sucre, "500patate": img500patate, "500patate2": img500patate,
     "100patate": img100patate, "500plantinoriginal": img500plantinOriginal,
-    "500sucre3": img500sucre, "500sucre": img500sucre
+    "500sucre3": img500sucre, "500sucre": img500sucre, "100original": img100original,
   };
 
   useEffect(() => {
@@ -86,7 +87,7 @@ function App() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
               </a>
             </div>
-            <a href="tel:+2250574155494" className="contact-btn"><Phone size={16} /> 05 74 15 54 94</a>
+            <a href="tel:+2250747244647" className="contact-btn"><Phone size={16} /> 05 74 15 54 94</a>
           </div>
         </div>
       </header>
@@ -147,7 +148,7 @@ function App() {
                     </ul>
                     <div className="official-sources">
                       <p className="source-title">Sources officielles :</p>
-                      <div className="source-links">
+                      <div className="source-links" translate='no'>
                         <a href="https://share.google/nzHf4zHE8PXmUoKw9" target="_blank" rel="noopener noreferrer" className="source-item">African Development Bank Group (Reportage)</a>
                         <a href="https://share.google/WIV5E6NsXTClr6cvJ" target="_blank" rel="noopener noreferrer" className="source-item">BAD - Impact Agripitch</a>
                       </div>
@@ -183,7 +184,7 @@ function App() {
                       </div>
                       <div className="founder-right">
                         <span className="founder-label-top">CO-FONDATEUR</span>
-                        <h4>Xavier Yao</h4>
+                        <h4>KOFFI AMANI FRANÇOIS XAVIER</h4>
                         <p className="founder-bio">Ingénieur Agribusiness (INP-HB).
                           Expert en développement d'affaires, 
                            Consultant et mentor pour entrepreneurs africains.</p>
@@ -200,7 +201,7 @@ function App() {
                       </div>
                       <div className="founder-right">
                         <span className="founder-label-top">CO-FONDATEUR</span>
-                        <h4>Fidèle Gbodja</h4>
+                        <h4>DOUDOU FIDÈLE SAINT JOËL</h4>
                         <p className="founder-bio">Passioné de transformation industriel et Expert en innovation alimentaire, dédié à l'impact social à Singrobo.</p>
                         
                       </div>

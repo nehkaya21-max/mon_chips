@@ -69,6 +69,14 @@ export const PRODUITSSTATIQUES = [
         description: "La douceur naturelle de la patate douce."
     },
     {
+        id: 14,
+        nom: "Chips Banane original",
+        prix: 100,
+        categorie: "original",
+        imagekey: "100original",
+        description: "Le craquant authentique du plantain de Côte d'Ivoire. fais a base de banane plantin mûre"
+    },
+    {
         id: 8,
         nom: "Chips patate douce",
         prix: 500,
@@ -78,6 +86,14 @@ export const PRODUITSSTATIQUES = [
     },
     {
         id: 9,
+        nom: "Chips Banane original",
+        prix: 500,
+        categorie: "original",
+        imagekey: "500plantinoriginal",
+        description: "Le craquant authentique du plantain de Côte d'Ivoire. fais a base de banane plantin mûre"
+    },
+    {
+        id: 13,
         nom: "Chips Banane original",
         prix: 500,
         categorie: "original",
@@ -95,10 +111,19 @@ export const PRODUITSSTATIQUES = [
     ,
     {
         id: 11,
-        nom: "Chips Banane original",
+        nom: "Chips Banane sucré",
         prix: 500,
         categorie: "sucré",
         imagekey: "500sucre",
+        description: "Le craquant authentique du plantain de Côte d'Ivoire. fais a base de banane plantin mûre"
+    }
+    ,
+    {
+        id: 12,
+        nom: "Chips Banane original",
+        prix: 100,
+        categorie: "original",
+        imagekey: "100original",
         description: "Le craquant authentique du plantain de Côte d'Ivoire. fais a base de banane plantin mûre"
     }
 ]
